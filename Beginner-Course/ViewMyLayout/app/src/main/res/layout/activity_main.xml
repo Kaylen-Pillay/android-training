@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
     <!--Adding a TextView that displays some text to the device-->
     <TextView
         android:id="@+id/TV_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:layout_gravity="center"
         android:text="@string/name"
-        />
+        android:textAppearance="?android:textAppearanceLarge" />
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/button_home"
-        android:onClick="onMakeLongString"
+        android:layout_gravity="center"
+        android:src="@drawable/cake" />
+
+    <Button
+        android:id="@+id/display_message_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/show"
+        android:textAppearance="?android:textAppearanceButton" />
+
+    <TextView
+        android:id="@+id/display_message"
+        android:textColor="@color/takealotBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold|italic"
+        android:visibility="gone"
         />
 
 </LinearLayout>
