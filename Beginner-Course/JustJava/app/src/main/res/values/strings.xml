@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="default_quantity">0</string>
+    <string name="quantity_header">Quantity</string>
+    <string name="total_prefix">Total: R </string>
+    <string name="total_default">Total: R 0</string>
+    <string name="order">order</string>
+</resources>
