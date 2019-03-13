@@ -3,7 +3,6 @@ package com.takealot.justjava;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -13,7 +12,7 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private static final int SINGLE_COFFEE_PRICE = 26;
-    private static final int MAX_QUANTITY = 10;
+    private static final int MAX_QUANTITY = 20;
     private static final int MIN_QUANTITY = 0;
 
     @Override
@@ -28,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         ConstraintLayout quantitySelector = findViewById(R.id.quantity_selector);
 
         // Trying to access the buttons in the quantitySelector child.
-        // Could this be done better? Ask Jason/Jean-Louis if they know's a better way.
+        // Could this be done better? Ask Jason/Jean-Louis if they know a better way.
         // Initial thought:
         //        int decreaseButtonIndex = 0;
         //        int increaseButtonIndex = 2;
@@ -73,10 +72,29 @@ public class MainActivity extends AppCompatActivity {
         setQuantity(currentQuantity - 1);
         return true;
     }
-    
+
     private void increasePrice() {
         // Get the current price
-        // TODO: Implement this function.
+        int currentTotalPrice = getCurrentTotalPrice();
+        // Set to the new price
+        setTotalPrice(currentTotalPrice + SINGLE_COFFEE_PRICE);
+    }
+
+    private void decreasePrice() {
+        // Get the current price
+        int currentTotalPrice = getCurrentTotalPrice();
+        // Set to the new price
+        setTotalPrice(currentTotalPrice - SINGLE_COFFEE_PRICE);
+    }
+
+    private int getCurrentTotalPrice() {
+        TextView totalPrice = findViewById(R.id.total_price);
+        return Integer.parseInt(totalPrice.getText().toString());
+    }
+
+    private void setTotalPrice(int total) {
+        TextView totalPrice = findViewById(R.id.total_price);
+        totalPrice.setText(String.format(Locale.getDefault(), "%d", total));
     }
 
     private int getCurrentQuantity() {
@@ -94,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (! increaseQuantity()) {
                 Toast.makeText(getApplicationContext(), "Cannot increase", Toast.LENGTH_SHORT).show();
+            } else {
+                increasePrice();
             }
         }
     };
@@ -103,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (! decreaseQuantity()) {
                 Toast.makeText(getApplicationContext(), "Cannot decrease", Toast.LENGTH_SHORT).show();
+            } else {
+                decreasePrice();
             }
         }
     };
