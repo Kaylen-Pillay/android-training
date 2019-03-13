@@ -1,0 +1,4 @@
+#Wed Mar 13 09:25:58 SAST 2019
+base.0=/Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/build/intermediates/transforms/dexMerger/debug/3
+path.0=classes.dex
+renamed.0=classes.dex
