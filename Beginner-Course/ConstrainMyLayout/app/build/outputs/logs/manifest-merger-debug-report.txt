@@ -1,0 +1,154 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/974f3c0eb545d6d6343c9c997fca2456/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0021285aedd7af1856397d2eadb86a11/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d3fbdc7ae5e6a946fa7815ec59d1e77/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/92a574acc3b70bea3425011f51a15fbd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d41a08f499ac23b899398af66c80d8af/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0d51f832d7d30eb5880b4f8c1f18cb5b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45f8a18b343904a803494800727e782/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/28064d7d23cfcbeb0edfb2e61e4ec5b7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/063a45118336872f20e9eceb7af071d6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/730eba42fa9707920bce4e817616df94/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/b569509f5c0a4a86b1a38c38867cc5f5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3806674103ad4c21ae81f14523b98016/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/271b0446df622a35d5db1a2522d237c7/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4d82dd248e3726c8468a2bfcd2443cca/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6d6983d73b6ebf126280efcb8fd5d9e1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c844177d5ad4c22c6dee97725d2eea4d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b90d86d2c061f5fbd9154cb6c87b0aa/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/69b5b9796a2e8eba06250f1b03833d0d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/853a6ccb3aad5d2062664a878a1c9906/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2aedb07b187194ab4a72623575952059/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7417b6f82653660bbc9bf09988a34480/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/df6f0d8f7de5688157ac53c4bd807077/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/41cad27763e18c828dc78cc1808a9d66/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/20b1b945a2e39b0211a87ef0f695801e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e091e548938047bc15307f15e2723bff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/97b5f9d16787ba9674176c21d8be145e/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:1-21:12
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0021285aedd7af1856397d2eadb86a11/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0021285aedd7af1856397d2eadb86a11/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c844177d5ad4c22c6dee97725d2eea4d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c844177d5ad4c22c6dee97725d2eea4d/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.takealot.constrainmylayout.MainActivity
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/974f3c0eb545d6d6343c9c997fca2456/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/974f3c0eb545d6d6343c9c997fca2456/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0021285aedd7af1856397d2eadb86a11/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/0021285aedd7af1856397d2eadb86a11/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d3fbdc7ae5e6a946fa7815ec59d1e77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/4d3fbdc7ae5e6a946fa7815ec59d1e77/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/92a574acc3b70bea3425011f51a15fbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/92a574acc3b70bea3425011f51a15fbd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d41a08f499ac23b899398af66c80d8af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/d41a08f499ac23b899398af66c80d8af/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0d51f832d7d30eb5880b4f8c1f18cb5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/0d51f832d7d30eb5880b4f8c1f18cb5b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45f8a18b343904a803494800727e782/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/b45f8a18b343904a803494800727e782/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/28064d7d23cfcbeb0edfb2e61e4ec5b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/28064d7d23cfcbeb0edfb2e61e4ec5b7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/063a45118336872f20e9eceb7af071d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/063a45118336872f20e9eceb7af071d6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/730eba42fa9707920bce4e817616df94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/730eba42fa9707920bce4e817616df94/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/b569509f5c0a4a86b1a38c38867cc5f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/b569509f5c0a4a86b1a38c38867cc5f5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3806674103ad4c21ae81f14523b98016/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/3806674103ad4c21ae81f14523b98016/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/271b0446df622a35d5db1a2522d237c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/271b0446df622a35d5db1a2522d237c7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4d82dd248e3726c8468a2bfcd2443cca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/4d82dd248e3726c8468a2bfcd2443cca/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6d6983d73b6ebf126280efcb8fd5d9e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/6d6983d73b6ebf126280efcb8fd5d9e1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/f7d6a485d6cab19494de61a11edca428/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c844177d5ad4c22c6dee97725d2eea4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/c844177d5ad4c22c6dee97725d2eea4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b90d86d2c061f5fbd9154cb6c87b0aa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/5b90d86d2c061f5fbd9154cb6c87b0aa/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/69b5b9796a2e8eba06250f1b03833d0d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/69b5b9796a2e8eba06250f1b03833d0d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/853a6ccb3aad5d2062664a878a1c9906/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/853a6ccb3aad5d2062664a878a1c9906/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2aedb07b187194ab4a72623575952059/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/2aedb07b187194ab4a72623575952059/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7417b6f82653660bbc9bf09988a34480/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/7417b6f82653660bbc9bf09988a34480/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/df6f0d8f7de5688157ac53c4bd807077/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/df6f0d8f7de5688157ac53c4bd807077/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/41cad27763e18c828dc78cc1808a9d66/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/41cad27763e18c828dc78cc1808a9d66/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/20b1b945a2e39b0211a87ef0f695801e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/20b1b945a2e39b0211a87ef0f695801e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e091e548938047bc15307f15e2723bff/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/e091e548938047bc15307f15e2723bff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/97b5f9d16787ba9674176c21d8be145e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/97b5f9d16787ba9674176c21d8be145e/AndroidManifest.xml:20:5-44
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		ADDED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/src/main/AndroidManifest.xml

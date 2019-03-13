@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/travis.pillay/Documents/Android-training/Beginner-Course/ConstrainMyLayout/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/travis.pillay/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/974f3c0eb545d6d6343c9c997fca2456/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}
