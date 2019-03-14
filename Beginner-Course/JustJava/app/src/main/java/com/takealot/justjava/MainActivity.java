@@ -3,7 +3,9 @@ package com.takealot.justjava;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -107,11 +109,24 @@ public class MainActivity extends AppCompatActivity {
         quantityTextView.setText(String.format(Locale.getDefault(),"%d" ,quantity));
     }
 
+    private void displayToast(String message) {
+        View toastLayout = getLayoutInflater().inflate(R.layout.cutom_toast,(ViewGroup)findViewById(R.id.custom_toast_container));
+
+        TextView toastMessageTextView = toastLayout.findViewById(R.id.text);
+        toastMessageTextView.setText(message);
+
+        Toast toast = new Toast(getApplicationContext());
+        toast.setGravity(Gravity.FILL_HORIZONTAL | Gravity.BOTTOM, 0, 0);
+        toast.setDuration(Toast.LENGTH_SHORT);
+        toast.setView(toastLayout);
+        toast.show();
+    }
+
     private View.OnClickListener increaseButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
             if (! increaseQuantity()) {
-                Toast.makeText(getApplicationContext(), "Cannot increase", Toast.LENGTH_SHORT).show();
+                displayToast("Cannot add more coffee's to your order.");
             } else {
                 increasePrice();
             }
@@ -122,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             if (! decreaseQuantity()) {
-                Toast.makeText(getApplicationContext(), "Cannot decrease", Toast.LENGTH_SHORT).show();
+                displayToast("Cannot decrease quantity of your order.");
             } else {
                 decreasePrice();
             }
@@ -132,7 +147,8 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener orderButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            Toast.makeText(getApplicationContext(), "Order coffee!", Toast.LENGTH_SHORT).show();
+            // Display the order details here.
+            displayToast("Coffee ordered!");
         }
     };
 }
