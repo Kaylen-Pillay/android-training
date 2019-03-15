@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Solo Java</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="default_quantity">1</string>
+    <string name="quantity_header">Cantidad</string>
+    <string name="total_prefix">Total: R </string>
+    <string name="total_default">26</string>
+    <string name="order">orden</string>
+    <string name="toppings_header">Coberturas</string>
+    <string name="whipped_cream_topping">Crema batida</string>
+    <string name="chocolate_topping">Salsa de chocolate</string>
+    <string name="name_header">Tu nombre</string>
+    <string name="name_hint">Introduzca su nombre aquí</string>
+    <string name="no_increase">No se puede agregar más café a su pedido.</string>
+    <string name="no_decrease">No se puede disminuir la cantidad de su pedido.</string>
+    <string name="MAILTO_title">¡Solo Orden de Java!</string>
+</resources>

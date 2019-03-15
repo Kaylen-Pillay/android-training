@@ -7,4 +7,6 @@
     <dimen name="small_padding_bottom">5dp</dimen>
     <dimen name="small_padding_right">5dp</dimen>
     <dimen name="small_padding_left">5dp</dimen>
+    <dimen name="margin_right">50dp</dimen>
+    <dimen name="margin_left">50dp</dimen>
 </resources>
