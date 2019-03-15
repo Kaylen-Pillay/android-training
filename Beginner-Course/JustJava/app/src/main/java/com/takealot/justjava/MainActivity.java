@@ -1,21 +1,34 @@
 package com.takealot.justjava;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.net.URI;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private static final int SINGLE_COFFEE_PRICE = 26;
     private static final int MAX_QUANTITY = 20;
     private static final int MIN_QUANTITY = 0;
+    private static final String MAILTO_ADDRESS="kaylen.pillay@takealot.com";
+    private static final String MAILTO_SUBJECT="Just Java Order:";
+    private static final int MAILTO_REQUEST_CODE = 1;
+
+    private Order order;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +37,11 @@ public class MainActivity extends AppCompatActivity {
 
         initialize();
     }
-
+    
     private void initialize() {
+        // Create the order object
+        order = new Order();
+
         ConstraintLayout quantitySelector = findViewById(R.id.quantity_selector);
 
         // Trying to access the buttons in the quantitySelector child.
@@ -47,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
         // Setting the OnClickListener for the order button
         Button orderButton = findViewById(R.id.order_button);
         orderButton.setOnClickListener(orderButtonClickListener);
+
+        // Setting the onClickListener for the toppings checkboxes.
+        CheckBox whippedCreamCheckBox = findViewById(R.id.whipped_cream_option);
+        CheckBox chocolateCheckBox = findViewById(R.id.chocolate_option);
+
+        whippedCreamCheckBox.setOnClickListener(toppingsCheckBoxOnClickListener);
+        chocolateCheckBox.setOnClickListener(toppingsCheckBoxOnClickListener);
     }
 
     private boolean increaseQuantity() {
@@ -59,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setQuantity(currentQuantity + 1);
+        order.setOrderQuantity(currentQuantity + 1);
         return true;
     }
 
@@ -72,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         setQuantity(currentQuantity - 1);
+        order.setOrderQuantity(currentQuantity - 1);
         return true;
     }
 
@@ -80,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         int currentTotalPrice = getCurrentTotalPrice();
         // Set to the new price
         setTotalPrice(currentTotalPrice + SINGLE_COFFEE_PRICE);
+        order.setOrderPrice(currentTotalPrice + SINGLE_COFFEE_PRICE);
     }
 
     private void decreasePrice() {
@@ -87,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         int currentTotalPrice = getCurrentTotalPrice();
         // Set to the new price
         setTotalPrice(currentTotalPrice - SINGLE_COFFEE_PRICE);
+        order.setOrderPrice(currentTotalPrice - SINGLE_COFFEE_PRICE);
     }
 
     private int getCurrentTotalPrice() {
@@ -122,6 +149,23 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
+    private void sendOrderToEmail() {
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        emailIntent.setType("text/plain");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, MAILTO_ADDRESS);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, MAILTO_SUBJECT);
+        emailIntent.putExtra(Intent.EXTRA_TEXT, order.toString());
+
+        if (emailIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(emailIntent, MAILTO_REQUEST_CODE);
+        }
+    }
+
+    private String getName() {
+        EditText nameEditText = findViewById(R.id.name_field);
+        return nameEditText.getText().toString();
+    }
+
     private View.OnClickListener increaseButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -147,8 +191,31 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener orderButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // Display the order details here.
-            displayToast("Coffee ordered!");
+            order.setCustomerName(getName());
+            sendOrderToEmail();
+        }
+    };
+
+    private View.OnClickListener toppingsCheckBoxOnClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.whipped_cream_option:
+                    if (((CheckBox)v).isChecked()){
+                        order.addToppingToOrder("Whipped cream");
+                    } else{
+                        order.removeToppingFromOrder("Whipped cream");
+                    }
+                    break;
+                case R.id.chocolate_option:
+                    if (((CheckBox)v).isChecked()) {
+                        order.addToppingToOrder("Chocolate sauce");
+                    } else {
+                        order.removeToppingFromOrder("Chocolate sauce");
+                    }
+                    break;
+                default:
+            }
         }
     };
 }
