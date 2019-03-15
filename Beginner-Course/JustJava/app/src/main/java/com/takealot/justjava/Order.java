@@ -16,6 +16,12 @@ public class Order {
         m_OrderQuantity = 0;
     }
 
+    public Order(int orderPrice, int orderQuantity){
+        m_ToppingsList = new ArrayList<>();
+        m_OrderPrice = orderPrice;
+        m_OrderQuantity = orderQuantity;
+    }
+
     public void setCustomerName(String name) {
         m_CustomerName = name;
     }

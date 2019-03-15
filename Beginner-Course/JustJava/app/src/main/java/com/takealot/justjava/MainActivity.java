@@ -22,11 +22,11 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
     private static final int SINGLE_COFFEE_PRICE = 26;
-    private static final int MAX_QUANTITY = 20;
-    private static final int MIN_QUANTITY = 0;
+    private static final int MAX_QUANTITY = 10;
+    private static final int MIN_QUANTITY = 1;
     private static final String MAILTO_ADDRESS="kaylen.pillay@takealot.com";
-    private static final String MAILTO_SUBJECT="Just Java Order:";
     private static final int MAILTO_REQUEST_CODE = 1;
+    private static String MAILTO_SUBJECT;
 
     private Order order;
 
@@ -40,7 +40,9 @@ public class MainActivity extends AppCompatActivity {
     
     private void initialize() {
         // Create the order object
-        order = new Order();
+        order = new Order(SINGLE_COFFEE_PRICE, MIN_QUANTITY);
+        // Set the MAILTO subject
+        MAILTO_SUBJECT = getResources().getString(R.string.MAILTO_title);
 
         ConstraintLayout quantitySelector = findViewById(R.id.quantity_selector);
 
@@ -170,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             if (! increaseQuantity()) {
-                displayToast("Cannot add more coffee's to your order.");
+                displayToast(getResources().getString(R.string.no_increase));
             } else {
                 increasePrice();
             }
@@ -181,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             if (! decreaseQuantity()) {
-                displayToast("Cannot decrease quantity of your order.");
+                displayToast(getResources().getString(R.string.no_decrease));
             } else {
                 decreasePrice();
             }
@@ -202,16 +204,16 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()){
                 case R.id.whipped_cream_option:
                     if (((CheckBox)v).isChecked()){
-                        order.addToppingToOrder("Whipped cream");
+                        order.addToppingToOrder(getResources().getString(R.string.whipped_cream_topping));
                     } else{
-                        order.removeToppingFromOrder("Whipped cream");
+                        order.removeToppingFromOrder(getResources().getString(R.string.whipped_cream_topping));
                     }
                     break;
                 case R.id.chocolate_option:
                     if (((CheckBox)v).isChecked()) {
-                        order.addToppingToOrder("Chocolate sauce");
+                        order.addToppingToOrder(getResources().getString(R.string.chocolate_topping));
                     } else {
-                        order.removeToppingFromOrder("Chocolate sauce");
+                        order.removeToppingFromOrder(getResources().getString(R.string.chocolate_topping));
                     }
                     break;
                 default:
