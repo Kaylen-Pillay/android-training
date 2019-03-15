@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private static final int MIN_QUANTITY = 0;
     private static final String MAILTO_ADDRESS="kaylen.pillay@takealot.com";
     private static final String MAILTO_SUBJECT="Just Java Order:";
+    private static final int MAILTO_REQUEST_CODE = 1;
 
     private Order order;
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
 
         initialize();
     }
-
+    
     private void initialize() {
         // Create the order object
         order = new Order();
@@ -148,7 +149,7 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
-    private void sendToOrderEmail() {
+    private void sendOrderToEmail() {
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setType("text/plain");
         emailIntent.putExtra(Intent.EXTRA_EMAIL, MAILTO_ADDRESS);
@@ -156,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_TEXT, order.toString());
 
         if (emailIntent.resolveActivity(getPackageManager()) != null) {
-            startActivity(emailIntent);
+            startActivityForResult(emailIntent, MAILTO_REQUEST_CODE);
         }
     }
 
@@ -190,9 +191,8 @@ public class MainActivity extends AppCompatActivity {
     private View.OnClickListener orderButtonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // sendToOrderEmail();
             order.setCustomerName(getName());
-            displayToast(order.toString());
+            sendOrderToEmail();
         }
     };
 
