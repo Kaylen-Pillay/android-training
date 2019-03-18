@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private MediaPlayer player;
@@ -15,6 +16,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         player = MediaPlayer.create(this, R.raw.bensound_creativeminds);
+        player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                Toast.makeText(getApplicationContext(),"I'm done!", Toast.LENGTH_SHORT).show();
+            }
+        });
 
         Button playMeButton = findViewById(R.id.play_me_button);
         playMeButton.setOnClickListener(new View.OnClickListener() {
